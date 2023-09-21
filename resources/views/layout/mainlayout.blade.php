@@ -26,7 +26,7 @@
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+    
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -46,18 +46,20 @@
             <div class="container d-flex justify-content-between align-items-center">
 
                 <div class="logo">
-                    <h1 class="text-light"><a href="index.html"><span>Brigawan</span></a></h1>
+                    <h1 class="text-light"><a href="{{ route('home') }}"><span>Brigawan</span></a></h1>
                     <!-- Uncomment below if you prefer to use an image logo -->
                     <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
                 </div>
 
                 <nav id="navbar" class="navbar">
                     <ul>
-                        <li><a class="nav-link {{ set_active('home')}}" href="{{ route('home') }}">Home</a></li>
-                        <li><a class="nav-link {{ set_active('map')}}" href="{{ route('map') }}">Map</a></li>
-                        <li><a class="nav-link {{ set_active('movement')}}" href="{{ route('movement') }}">Movement</a></li>
-                        <li><a class="nav-link {{ set_active('collaborator')}}" href="{{ route('collaborator') }}">Collaborator</a></li>
-                        <li><a class="nav-link {{ set_active('login')}}" href="{{ route('login') }}">Logo Profile</a></li>
+                        <li><a class="nav-link {{ set_active('home') }}" href="{{ route('home') }}">Home</a></li>
+                        <li><a class="nav-link {{ set_active('map') }}" href="{{ route('map') }}">Map</a></li>
+                        <li><a class="nav-link {{ set_active('movement') }}" href="{{ route('movement') }}">Movement</a>
+                        </li>
+                        <li><a class="nav-link {{ set_active('collaborator') }}"
+                                href="{{ route('collaborator') }}">Collaborator</a></li>
+                        <li><a class="nav-link {{ set_active('login') }}" href="{{ route('login') }}"><img src="assets/img/profile.png" width="30" height="30" alt=""></i></a></li>
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav><!-- .navbar -->
@@ -96,7 +98,7 @@
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h4>Contact Us</h4>
                         <p>
-                             <br>
+                            <br>
                             <br>
                             Indonesia <br><br>
                             <strong>Phone:</strong><br>
