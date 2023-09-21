@@ -53,11 +53,11 @@
 
                 <nav id="navbar" class="navbar">
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/map">Map</a></li>
-                        <li><a href="/movement">Movement</a></li>
-                        <li><a href="/collaborator">Collaborator</a></li>
-                        <li><a href="/login">Logo Profile</a></li>
+                        <li><a class="nav-link {{ set_active('home')}}" href="{{ route('home') }}">Home</a></li>
+                        <li><a class="nav-link {{ set_active('map')}}" href="{{ route('map') }}">Map</a></li>
+                        <li><a class="nav-link {{ set_active('movement')}}" href="{{ route('movement') }}">Movement</a></li>
+                        <li><a class="nav-link {{ set_active('collaborator')}}" href="{{ route('collaborator') }}">Collaborator</a></li>
+                        <li><a class="nav-link {{ set_active('login')}}" href="{{ route('login') }}">Logo Profile</a></li>
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav><!-- .navbar -->
